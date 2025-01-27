@@ -1,0 +1,40 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "init": "tsc --init",
+        "dev": "nodemon src/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "description": "",
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/json2csv": "^5.0.7",
+        "@types/pdfkit": "^0.13.8",
+        "@types/pdfmake": "^0.2.11",
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "joi": "^17.13.3",
+        "knex": "^3.1.0",
+        "mysql2": "^3.12.0",
+        "ts-node": "^10.9.2"
+    },
+    "dependencies": {
+        "@types/ws": "^8.5.14",
+        "backend": "file:",
+        "chart.js": "^4.4.7",
+        "dotenv": "^16.4.7",
+        "json2csv": "^6.0.0-alpha.2",
+        "nodemon": "^3.1.9",
+        "pdfkit": "^0.16.0",
+        "pdfmake": "^0.2.18",
+        "puppeteer": "^24.1.1",
+        "react-query": "^3.39.3",
+        "ws": "^8.18.0"
+    }
+}
