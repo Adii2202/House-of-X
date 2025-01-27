@@ -14,7 +14,7 @@ export class LogController {
 
   generateReport = async (req: Request, res: Response): Promise<void> => {
     try {
-      const logs = await LogModel.findInTimeRange(new Date("2023-01-01"), new Date()); // You can pass params here
+      const logs = await LogModel.findInTimeRange(new Date("2023-01-01"), new Date());
       const metrics = await LogModel.getMetrics();
       const summary: LogSummary = await LogModel.getSummary();
 
