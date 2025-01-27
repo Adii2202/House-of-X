@@ -14,23 +14,18 @@ export class LogController {
 
   generateReport = async (req: Request, res: Response): Promise<void> => {
     try {
-      // Fetch logs, metrics, and summary
       const logs = await LogModel.findInTimeRange(new Date("2023-01-01"), new Date()); // You can pass params here
       const metrics = await LogModel.getMetrics();
       const summary: LogSummary = await LogModel.getSummary();
 
-      // Prepare PDF content
       const docDefinition = this.getPdfDocDefinition(logs, metrics, summary);
 
-      // Create PDF with pdfmake
       const printer = new PdfPrinter({});
       const pdfDoc = printer.createPdfKitDocument(docDefinition);
 
-      // Set up correct response headers for the PDF
       res.setHeader('Content-Type', 'application/pdf');
       res.setHeader('Content-Disposition', 'attachment; filename=log_report.pdf');
 
-      // Pipe the PDF output to the response
       pdfDoc.pipe(res);
       pdfDoc.end();
     } catch (error) {

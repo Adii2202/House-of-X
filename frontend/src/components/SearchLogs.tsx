@@ -24,7 +24,7 @@ const SearchLogs: React.FC = () => {
   } = useQuery<Log[], Error>(
     ["searchLogs", query],
     () => fetchLogs(query),
-    { enabled: query.length > 0 } // Only make the request if the query has text
+    { enabled: query.length > 0 }
   );
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

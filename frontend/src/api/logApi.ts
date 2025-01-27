@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api/logs', // Your Express server URL
+  baseURL: 'http://localhost:8000/api/logs',
 });
 
 export const fetchLogs = async (startTime: Date, endTime: Date) => {

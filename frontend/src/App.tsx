@@ -47,12 +47,10 @@ const App = () => {
           Log Management Dashboard
         </h1>
 
-        {/* Log Form */}
         <div className="mb-10">
           <LogForm />
         </div>
 
-        {/* Search Section */}
         <div className="bg-white shadow-lg rounded-lg p-6 mb-10">
           <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">
             Search Logs
@@ -74,7 +72,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Search Results */}
         <div className="bg-white shadow-lg rounded-lg p-6 mb-10">
           <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">
             Search Results
@@ -99,11 +96,9 @@ const App = () => {
           )}
         </div>
 
-        {/* Metrics and Summary */}
         <LogMetrics startTime={startTime} endTime={endTime} />
         <LogSummary />
 
-        {/* Download Report */}
         <div className="text-center">
           <button
             onClick={downloadReport}
