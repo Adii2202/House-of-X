@@ -1,8 +1,4 @@
-Here’s an enhanced and structured version of the description with professional formatting and clarity:
-
----
-
-### 📽 Video Demonstration
+## 📽 Video Demonstration
 
 [**Click here to view the video**](https://drive.google.com/file/d/1CbOZ06dXBZSO_ZcmhEi9Z072_iI4FWMH/view?usp=sharing)
 
@@ -25,7 +21,7 @@ Below are snapshots showcasing the API endpoints' responses for various operatio
 
 ---
 
-### 💻 Tech Stack Overview
+### 💻 Tech Stack Overview - Typescript
 
 #### **Frontend**:
 
@@ -37,9 +33,8 @@ Below are snapshots showcasing the API endpoints' responses for various operatio
 
 #### **Backend**:
 
-- **Node.js**
-- **Express.js**
-- **Knex.js**
+- **Node**
+- **Express**
 - **WebSockets**
 - **Axios**
 
